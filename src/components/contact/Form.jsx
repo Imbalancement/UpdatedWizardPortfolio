@@ -75,7 +75,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "CodeBucks",
+      to_name: "Corey",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -97,7 +97,7 @@ export default function Form() {
         <motion.input
           variants={item}
           type="text"
-          placeholder="name"
+          placeholder="Name"
           {...register("name", {
             required: "This field is required!",
             minLength: {
@@ -114,7 +114,7 @@ export default function Form() {
         )}
         <motion.input
           variants={item}
-          type="email"
+          type="Email"
           placeholder="email"
           {...register("email", { required: "This field is required!" })}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
@@ -126,7 +126,7 @@ export default function Form() {
         )}
         <motion.textarea
           variants={item}
-          placeholder="message"
+          placeholder="Message"
           {...register("message", {
             required: "This field is required!",
             maxLength: {
