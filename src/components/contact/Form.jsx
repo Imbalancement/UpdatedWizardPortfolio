@@ -119,7 +119,7 @@ export default function Form() {
         <motion.input
           variants={item}
           type="Email"
-          placeholder="email"
+          placeholder="Email"
           {...register("email", { required: "This field is required!" })}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
         />
