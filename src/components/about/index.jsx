@@ -69,8 +69,8 @@ const AboutDetails = () => {
         <ItemLayout className={"col-span-full"}>
           <img
             className="w-full h-auto"
-            src={`https://skillicons.dev/icons?i=css,firebase,git,github,graphql,html,js,linux,nextjs,nodejs,npm,react,redux,tailwind,threejs,vercel,vite,vscode,yarn`}
-            alt="CodeBucks"
+            src={`https://skillicons.dev/icons?i=aws,css,firebase,git,github,graphql,html,js,linux,nextjs,nodejs,npm,react,redux,tailwind,threejs,vercel,vite,vscode,yarn`}
+            alt="Imbalancement"
             loading="lazy"
           />
         </ItemLayout>
