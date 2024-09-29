@@ -27,12 +27,7 @@ export default function Form() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-}
 
-  
-  
-  
-  
   const sendEmail = (params) => {
     const toastId = toast.loading("Sending your message, please wait...");
 
@@ -43,44 +38,44 @@ export default function Form() {
       }
     );
 
-   // comment out the above toast.info and uncomment the below code to enable emailjs
+    // comment out the above toast.info and uncomment the below code to enable emailjs
 
-  //   emailjs
-  //     .send(
-  //       process.env.NEXT_PUBLIC_SERVICE_ID,
-  //       process.env.NEXT_PUBLIC_TEMPLATE_ID,
-  //       params,
-  //       {
-  //         publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-  //         limitRate: {
-  //           throttle: 5000, // you can not send more then 1 email per 5 seconds
-  //         },
-  //       }
-  //     )
-  //     .then(
-  //       () => {
-  //         toast.success(
-  //           "I have received your message, I will get back to you soon!",
-  //           {
-  //             id: toastId,
-  //           }
-  //         );
-  //       },
-  //       (error) => {
-  //         // console.log("FAILED...", error.text);
-  //         toast.error(
-  //           "There was an error sending your message, please try again later!",
-  //           {
-  //             id: toastId,
-  //           }
-  //         );
-  //       }
-  //     );
-  // };
+    // emailjs
+    //   .send(
+    //     process.env.NEXT_PUBLIC_SERVICE_ID,
+    //     process.env.NEXT_PUBLIC_TEMPLATE_ID,
+    //     params,
+    //     {
+    //       publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
+    //       limitRate: {
+    //         throttle: 5000, // you can not send more then 1 email per 5 seconds
+    //       },
+    //     }
+    //   )
+    //   .then(
+    //     () => {
+    //       toast.success(
+    //         "I have received your message, I will get back to you soon!",
+    //         {
+    //           id: toastId,
+    //         }
+    //       );
+    //     },
+    //     (error) => {
+    //       // console.log("FAILED...", error.text);
+    //       toast.error(
+    //         "There was an error sending your message, please try again later!",
+    //         {
+    //           id: toastId,
+    //         }
+    //       );
+    //     }
+    //   );
+  };
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "Corey",
+      to_name: "Imbalancement",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -119,7 +114,7 @@ export default function Form() {
         )}
         <motion.input
           variants={item}
-          type="Email"
+          type="email"
           placeholder="Email"
           {...register("email", { required: "This field is required!" })}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
@@ -162,4 +157,4 @@ export default function Form() {
       </motion.form>
     </>
   );
- }
+}
