@@ -27,17 +27,18 @@ export const projectsData = [
   {
     id: 2,
     name: "NovaCart",
-    description: "For all your shopping needs. SPIN DOWN LONG LOAD TIME",
+    description: "For all your shopping needs.",
     date: "2024",
     demoLink: "https://novacart-44g8.onrender.com/",
   },
   {
     id: 3,
     name: "ChatSphere",
-    description: "Chat with friends and make a few new ones! SPIN DOWN LONG LOAD TIME",
+    description: "Chat with friends and make a few new ones!",
     date: "",
     demoLink: "https://chatapp-8vkh.onrender.com/login",
   },
+  
 ];
 
 export const BtnList = [
@@ -58,8 +59,8 @@ export const BtnList = [
     newTab: true,
   },
   {
-    label: "X",
-    link: "",
+    label: "Discord",
+    link: "https://discordapp.com/users/339196150823256064",
     icon: "twitter",
     newTab: true,
   },
