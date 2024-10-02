@@ -7,7 +7,7 @@ const item = {
 };
 
 const ProjectLink = motion(Link);
-const ProjectLayout = ({ name, description, date, demoLink }) => {
+const ProjectLayout = ({ name, description, demoLink }) => {
   return (
     <ProjectLink
       variants={item}
@@ -21,7 +21,7 @@ const ProjectLayout = ({ name, description, date, demoLink }) => {
       </div>
       <div className="self-end flex-1 mx-2 mb-1 bg-transparent border-b border-dashed border-muted" />
       <p className="text-muted sm:text-foreground">
-        {new Date(date).toDateString()}
+       {/* {new Date(date).toDateString()} */}
       </p>
     </ProjectLink>
   );
