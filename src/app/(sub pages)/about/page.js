@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../../../public/background/about-background.png";
+import bg from "../../../../public/background/snowycabin.jpg";
 import RenderModel from "@/components/RenderModel";
 // import HatModel from "@/components/models/HatModel";
 import AboutDetails from "@/components/about";
@@ -35,7 +35,7 @@ export default function Home() {
             Corey W.
           </h1>
           <p className="font-light text-foreground text-lg">
-            Meet the wizard behind this portfolio
+            Meet the mage behind this portfolio
           </p>
         </div>
       </div>
