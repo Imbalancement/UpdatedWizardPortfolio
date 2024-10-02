@@ -28,21 +28,17 @@ export default function Form() {
     formState: { errors },
   } = useForm();
 
-  
-  
-  
-  
-  // const sendEmail = (params) => {
-  //   const toastId = toast.loading("Sending your message, please wait...");
+  const sendEmail = (params) => {
+    const toastId = toast.loading("Sending your message, please wait...");
 
-  //   toast.info(
-  //     "Form submissions are demo-only here. Please checkout the final code repo to enable it. If you want to connect you can reach out to me via codebucks27@gmail.com.",
-  //     {
-  //       id: toastId,
-  //     }
-  //   );
+    toast.info(
+      "Wait For a Response. . .",
+      {
+        id: toastId,
+      }
+     );
 
-    //comment out the above toast.info and uncomment the below code to enable emailjs
+    // comment out the above toast.info and uncomment the below code to enable emailjs
 
     emailjs
       .send(
@@ -66,7 +62,7 @@ export default function Form() {
           );
         },
         (error) => {
-          // console.log("FAILED...", error.text);
+           console.log("FAILED...", error.text);
           toast.error(
             "There was an error sending your message, please try again later!",
             {
@@ -79,7 +75,7 @@ export default function Form() {
 
   const onSubmit = (data) => {
     const templateParams = {
-      to_name: "Corey",
+      to_name: "Imbalancement",
       from_name: data.name,
       reply_to: data.email,
       message: data.message,
@@ -87,6 +83,7 @@ export default function Form() {
 
     sendEmail(templateParams);
   };
+
 
   return (
     <>
@@ -118,8 +115,8 @@ export default function Form() {
         )}
         <motion.input
           variants={item}
-          type="Email"
-          placeholder="email"
+          type="email"
+          placeholder="Email"
           {...register("email", { required: "This field is required!" })}
           className="w-full p-2 rounded-md shadow-lg text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 custom-bg"
         />
@@ -161,4 +158,4 @@ export default function Form() {
       </motion.form>
     </>
   );
-// }
+}
