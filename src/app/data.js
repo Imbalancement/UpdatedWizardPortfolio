@@ -27,14 +27,14 @@ export const projectsData = [
   {
     id: 2,
     name: "NovaCart",
-    description: "For all your shopping needs.",
+    description: "For all your shopping needs. Deploying a store using React.js, Stripe, Node.js and Redis. Full shopping store with checkout included.",
     date: "2024",
     demoLink: "https://novacart-44g8.onrender.com/",
   },
   {
     id: 3,
     name: "ChatSphere",
-    description: "Chat with friends and make a few new ones!",
+    description: "Chat with friends and make a few new ones! Utilizing tech like React, Node.js, Socket.io and MongoDB. Login Authentication and full chat capabilities.",
     date: "",
     demoLink: "https://chatapp-8vkh.onrender.com/login",
   },
