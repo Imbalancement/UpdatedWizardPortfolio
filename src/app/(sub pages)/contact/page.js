@@ -23,12 +23,13 @@ export default function Contact() {
             summon the mage
           </h1>
           <p className="text-center font-light text-sm xs:text-base">
-            Step into the circle of enchantment and weave your words into the
-            fabric of the cosmos. Whether you seek to conjure collaborations,
-            unlock mysteries, or simply share tales of adventure, your messages
-            are treasured scrolls within this realm. Use the form below to send
-            your missives through the ethereal network, and await the whisper of
-            magic in response.
+            Enter the frost-bound circle of enchantment, where your words
+            shimmer like frost-laden whispers in the winter night. Whether you
+            seek to craft icy collaborations, unravel frozen mysteries, or share
+            tales of frosted adventures, your messages become treasured scrolls
+            in this realm of snow and starlight. Use the form below to send your
+            frostbitten missives through the ethereal winter winds, and await
+            the chill of magic as it whispers back in response.
           </p>
         </div>
         <Form />
