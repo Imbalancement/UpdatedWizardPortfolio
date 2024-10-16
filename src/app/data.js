@@ -19,24 +19,24 @@ Websites:
 export const projectsData = [
   {
     id: 1,
-    name: "EcoTracker",
-    description: "Track your carbon footprint",
-    date: "2024",
-    demoLink: "https://chatapp-8vkh.onrender.com/login",
-  },
-  {
-    id: 2,
     name: "NovaCart",
-    description: "For all your shopping needs. Deploying a store using React.js, Stripe, Node.js and Redis. Full shopping store with checkout included.",
+    description: "For all your shopping needs. Deploying a store using React.js, Stripe, Node.js and Redis. Full shopping store with Stripe checkout included.",
     date: "2024",
     demoLink: "https://novacart-44g8.onrender.com/",
   },
   {
-    id: 3,
+    id: 2,
     name: "ChatSphere",
     description: "Chat with friends and make a few new ones! Utilizing tech like React, Node.js, Socket.io and MongoDB. Login Authentication and full chat capabilities.",
     date: "",
     demoLink: "https://chatapp-8vkh.onrender.com/login",
+  },
+  {
+    id: 3,
+    name: "Nexus Admin",
+    description: "A sleek design, real-time sales dashboard with React, Vite, Tailwind CSS, and Recharts",
+    date: "",
+    demoLink: "https://admindash.coreywilliamsdev.com/",
   },
   
 ];
