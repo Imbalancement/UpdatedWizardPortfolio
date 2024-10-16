@@ -34,7 +34,7 @@ export const projectsData = [
   {
     id: 3,
     name: "Nexus Admin",
-    description: "A sleek design, real-time sales dashboard with React, Vite, Tailwind CSS, and Recharts",
+    description: "A sleek design, real-time sales dashboard with React, Vite, Tailwind CSS, and Recharts.",
     date: "",
     demoLink: "https://admindash.coreywilliamsdev.com/",
   },

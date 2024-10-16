@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../../../public/background/SnowyCastle.jpg";
+import bg from "../../../../public/background/snowcastle.jpg";
 import ProjectList from "@/components/projects";
 import { projectsData } from "../../data";
 import RenderModel from "@/components/RenderModel";
